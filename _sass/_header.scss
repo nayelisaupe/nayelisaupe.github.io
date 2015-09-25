@@ -1,0 +1,7 @@
+@import "bourbon/bourbon";
+
+.navbar {
+	@include box-shadow(0px 0px 5px lighten($gray, 30%));
+	background: $white;
+	border: 0;
+}

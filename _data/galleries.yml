@@ -1,0 +1,29 @@
+- id: testGallery
+  description: Some pics from our wedding.
+  imagefolder: /img/posts/wedding
+  images:
+  # - name: Wedding-0202.jpg
+  #   # thumb: thumb-1.jpg
+  #   text: The first image
+  # - name: it-crowd.jpg
+  #   # thumb: thumb-2.jpg
+  #   text: The second image
+  # - name: moss.jpg
+  #   # thumb: thumb-3.jpg
+  #   text: The third image
+  # - name: tripod.jpg
+  #   # thumb: thumb-3.jpg
+  #   text: The third image
+  - name: Wedding-0202.jpg
+  - name: Wedding-0203.jpg
+  - name: Wedding-0205.jpg
+  - name: Wedding-0209.jpg
+  - name: Wedding-0206.jpg
+  - name: Wedding-0212.jpg
+  - name: Wedding-0214.jpg
+  - name: Wedding-0204.jpg
+  - name: Wedding-0211.jpg
+  - name: Wedding-0207.jpg
+  - name: Wedding-0208.jpg
+  - name: Wedding-0210.jpg
+  - name: Wedding-0213.jpg

@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{% for gallery in site.data.galleries %}
+  {% if gallery.id == page.galleryid %}
+    <h1>{{ page.title }}</h1>
+    <div class="gallery">
+    {% for image in gallery.images %}
+    	{% if image.thumbnail %}
+			<a href="{{ gallery.imagefolder }}/{{ image.name }}" data-toggle="lightbox" data-title="{{ image.text }}" data-gallery="{{page.galleryid}}" class="gallery__image" style="background-image: url('{{gallery.imagefolder}}/{{image.thumbnail}}')">
+	        </a>
+    	{% else %}
+	        <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-toggle="lightbox" data-title="{{ image.text }}" data-gallery="{{page.galleryid}}" class="gallery__image" style="background-image: url('{{gallery.imagefolder}}/{{image.name}}')">
+	        </a>
+        {% endif %}
+    {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script src="/js/bootstrap/modal.js"></script>
+<script src="/js/lightbox.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        // delegate calls to data-toggle="lightbox"
+        $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+            event.preventDefault();
+            return $(this).ekkoLightbox({
+                onShown: function() {
+                    if (window.console) {
+                        return console.log('Checking our the events huh?');
+                    }
+                },
+				onNavigate: function(direction, itemIndex) {
+                    if (window.console) {
+                        return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                    }
+				}
+            });
+        });
+    });
+</script>

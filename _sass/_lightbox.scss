@@ -1,0 +1,104 @@
+@import "bourbon/bourbon";
+@import "bootstrap/variables";
+
+
+.lightbox {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10000;
+	width: 100%;
+
+	.modal-title {
+		display: none;
+	}
+
+	.lightbox-header {
+	    z-index: 1000;
+	    position: absolute;
+	    width: 100%;
+	    height: 20vh;
+		button {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-size: 4em;
+			width: 10vw;
+			color: white;
+			opacity: 0.8;
+			background: transparent;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	.lightbox-container {
+		@include display('flex');
+		@include align-items(center);
+		height: 100vh;
+
+		> div:first-of-type {
+			@include display('flex');
+			@include justify-content(center);
+			width: 100%;
+		}
+		img {
+		    max-height: 100vh;
+		    max-width: 100vw;
+    		height: 100vh;
+    		/*width: 100%;*/
+		}
+	}
+	.lightbox-nav-overlay {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		a {
+			@include display('flex');
+			@include align-items(center);
+			@include justify-content(center);
+		    height: 100vh;
+		    width: 10vw;
+		    font-size: 4em;
+		    color: white;
+		}
+		a:first-of-type {
+			left: 0;
+		}
+		a:last-of-type {
+			right: 0;
+			position: absolute;
+		}
+	}
+
+
+	@include media-query($screen-lg-min) {
+		
+	}
+
+	@include media-query($screen-md-min) {
+		
+	}
+
+	@include media-query($screen-sm-min) {
+		.lightbox-nav-overlay a {
+			font-size: 3em;
+			width: 20vw;
+		}
+		.lightbox-header button {
+			width: 20vw;
+			font-size: 3em;
+		}
+	}
+
+	@include media-query($screen-xs-min) {
+		.lightbox-container {
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
