@@ -1,0 +1,7 @@
+- id: mainCarousel
+  imagefolder: /img/posts/wedding
+  images:
+  - name: Wedding-0202.jpg
+  - name: Wedding-0203.jpg
+  - name: Wedding-0205.jpg
+  - name: Wedding-0209.jpg

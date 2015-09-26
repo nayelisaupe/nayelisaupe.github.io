@@ -1,7 +1,77 @@
 ---
 layout: default
+carouselId: mainCarousel
 ---
+<header id="home" class="main-header">
+  <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="15000">
+    <div class="carousel-filter"></div>
+    <div class="carousel-inner" role="listbox">
+    {% for carousel in site.data.carousels %}
+      {% if carousel.id == page.carouselId %}
+        {% for image in carousel.images %}
+          <div class="item{% if forloop.first %} active{% endif %}" style="background-image: url('{{carousel.imagefolder}}/{{image.name}}')">
+            
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    </div>
 
+  </div>
+  <div class="sub-header">
+    
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="container">
+    <h1>Hi! I'm Nayeli</h1>
+    <div class="row vertically-centered">
+      <div class="col-md-4 col-lg-3 text-center">
+        <img src="/img/posts/testpics/moss.jpg" class="img-responsive img-circle">
+      </div>
+      <div class="col-md-8 col-lg-9 text-justify">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit. Donec dui nulla, lobortis at purus eu, aliquam mattis risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris in elit ac mi aliquam finibus. Donec quis massa non nulla consequat tempor non in justo. Suspendisse consequat dolor nec feugiat vehicula. Nam faucibus varius libero, vel iaculis est tincidunt sagittis. Nullam cursus bibendum pharetra.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="portfolio">
+  <div class="gallery">
+    {% for post in site.posts %}
+      {% for gallery in site.data.galleries %}
+        {% if gallery.id == post.galleryid %}
+          
+            {% if gallery.images.first.thumbnail %}
+            <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.thumbnail}}')">
+            </a>
+  
+            {% else %}
+              <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.name}}')">
+            </a>
+            {% endif %}
+
+        {% endif %}
+      {% endfor %}
+    {% endfor %}  
+
+  </div>
+</section>
+
+<section class="pricing">
+
+
+</section>
+
+<section class="contact">
+
+</section>
+
+<!-- 
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
@@ -22,3 +92,4 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+ -->

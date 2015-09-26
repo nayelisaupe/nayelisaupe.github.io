@@ -1,4 +1,58 @@
+@import "bourbon/bourbon";
+
 main {
     margin-top: 50px;
     min-height: 80vh;
+    padding: 0px !important;
+}
+
+.main-header {
+	background: $primary;
+	color: $white;
+	text-align: center;
+	
+	.sub-header {
+		height: calc(20vh - 50px);
+	}
+}
+
+
+.vertically-centered.row {
+	@include display('flex');
+	@include align-items(center);
+}
+
+.img-responsive.img-circle {
+	margin: auto;
+}
+
+
+
+.marquee {
+    top: 6em;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 30s linear infinite;
+    @include display('flex');
+    @include flex-direction(column);
+    > div {
+    	display: inline-block;
+    }
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   0.6em }
+    100% { top: -4em }
+}
+
+.marquee-container {
+	position: relative;
+	overflow: hidden;
+	height: 1em;
 }

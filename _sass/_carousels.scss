@@ -1,0 +1,23 @@
+@import "bourbon/bourbon";
+
+$carouselHeight: calc(80vh - 50px);
+.carousel {
+	position: relative;
+
+	.item {
+		@include transition(0s);
+		height: $carouselHeight;
+		background-size: cover;
+	}
+
+	.carousel-filter {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: $carouselHeight;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		background: rgba(0,0,0,0.42);
+	}
+}
