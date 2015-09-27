@@ -3,6 +3,9 @@ layout: default
 carouselId: mainCarousel
 ---
 <header id="home" class="main-header">
+  <div class="logo-container">
+  <img src="{{site.white_logo}}">
+  </div>
   <div class="carousel slide" data-ride="carousel" data-pause="false" data-interval="15000">
     <div class="carousel-filter"></div>
     <div class="carousel-inner" role="listbox">
@@ -25,12 +28,12 @@ carouselId: mainCarousel
 
 <section id="about" class="about">
   <div class="container">
-    <h1>Hi! I'm Nayeli</h1>
+    <h2>Hi! I'm Nayeli</h2>
     <div class="row vertically-centered">
-      <div class="col-md-4 col-lg-3 text-center">
-        <img src="/img/posts/testpics/moss.jpg" class="img-responsive img-circle">
+      <div class="col-sm-12 col-md-4 col-lg-3 text-center">
+        <img src="{{site.profile_pic}}" class="img-responsive img-circle">
       </div>
-      <div class="col-md-8 col-lg-9 text-justify">
+      <div class="col-sm-12 col-md-8 col-lg-9 text-justify">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit. Donec dui nulla, lobortis at purus eu, aliquam mattis risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris in elit ac mi aliquam finibus. Donec quis massa non nulla consequat tempor non in justo. Suspendisse consequat dolor nec feugiat vehicula. Nam faucibus varius libero, vel iaculis est tincidunt sagittis. Nullam cursus bibendum pharetra.
         </p>
@@ -39,9 +42,22 @@ carouselId: mainCarousel
   </div>
 </section>
 
+<section class="slc">
+  <div class="container">
+    <h2>Salt Lake City, UT</h2>
+    <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+        </p>
+  </div>
+  <img class="skyline" src="/img/slc-skyline-black.svg">
+</section>
 
-<section class="portfolio">
-  <div class="gallery">
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+  </div>
+  <div class="gallery large">
     {% for post in site.posts %}
       {% for gallery in site.data.galleries %}
         {% if gallery.id == post.galleryid %}
@@ -62,13 +78,153 @@ carouselId: mainCarousel
   </div>
 </section>
 
-<section class="pricing">
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2>Price List</h2>
 
+    <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#general-prices" aria-controls="general-prices" role="tab" data-toggle="tab">General Prices</a></li>
+    <li role="presentation"><a href="#wedding-prices" aria-controls="wedding-prices" role="tab" data-toggle="tab">Wedding Prices</a></li>
+    
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="general-prices">
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+      </p>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist">
+            <div class="pricelist__title">Regular</div>
+            <div class="pricelist__price">$750</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist">
+            <div class="pricelist__title">Premium</div>
+            <div class="pricelist__price">$900</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist">
+            <div class="pricelist__title">Platinum</div>
+            <div class="pricelist__price">$1,200</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="wedding-prices">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+      </p>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist wedding">
+            <div class="pricelist__title">Regular</div>
+            <div class="pricelist__price">$1,000</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist wedding">
+            <div class="pricelist__title">Premium</div>
+            <div class="pricelist__price">$1,500</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="pricelist wedding">
+            <div class="pricelist__title">Platinum</div>
+            <div class="pricelist__price">$2,000</div>
+            <ul class="pricelist__list">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Interdum et malesuada fames ac ante ipsum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+    
+  </div>
 
 </section>
 
-<section class="contact">
-
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Get In Touch</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+      </p>
+      <div class="text-center">
+        <a href="mailto:{{site.email}}" class="btn btn-primary action-btn"><i class="fa fa-envelope-o"></i> Request Quote</a>
+      </div>
+  </div>
 </section>
 
 <!-- 

@@ -6,15 +6,26 @@
             <span class="sr-only">Toggle navigation</span>
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="/">{{ site.title }}</a>
+          <a class="navbar-brand" href="/"><img src="{{ site.black_logo }}" alt="Nayeli Saupe Photography" /></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            {% for category in site.pages %}
+          <ul class="nav navbar-nav" id="navbar">
+          {% if page.url == "/index.html" %}
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          {% else %}
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          {% endif %}
+            <!-- {% for category in site.pages %}
               {% if category.title %}
                 <li {% if page.url == category.url %}class="active"{% endif %}><a class="page-link" href="{{ category.url | prepend: site.baseurl }}">{{ category.title }}</a></li>
               {% endif %}
-            {% endfor %}
+            {% endfor %} -->
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

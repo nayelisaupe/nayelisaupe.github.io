@@ -32,6 +32,7 @@ $darkPrimary: darken($primary, 25%);
 
 $black: #333;
 $gray: #6d6d6d;
+$lightGray: lighten($gray, 35%);
 $white: #fff;
 $offWhite: #f2f2f2;
 
@@ -62,5 +63,6 @@ $offWhite: #f2f2f2;
         "lightbox",
         "footer",
         "header",
-        "carousels"
+        "carousels",
+        "pricelist"
 ;

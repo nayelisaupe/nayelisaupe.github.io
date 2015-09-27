@@ -10,6 +10,9 @@ url: "http://photosbynayeli.com" # the base hostname & protocol for your site
 twitter_username: test
 instagram_username: insta-test
 facebook_username: nayelisaupephotography
+profile_pic: /img/posts/testpics/moss.jpg
+white_logo: /img/logo-white.svg
+black_logo: /img/logo-black.svg
 
 # Build settings
 markdown: kramdown

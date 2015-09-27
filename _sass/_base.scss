@@ -1,0 +1,67 @@
+@import "bourbon/bourbon";
+
+body {
+	font-family: CooperHewitt;
+	color: $black;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+	font-family: "HoneyScript";
+}
+
+h2 {
+	font-size: 10em;
+}
+
+p {
+	font-size: 1.3em;
+	padding: 1em;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+
+@include media-query($screen-sm-min) {
+	h2 {
+		font-size: 6em;
+	}
+}
+
+
+.vertically-centered.row {
+	@include display('flex');
+	@include align-items(center);
+}
+
+@include media-query($screen-sm-min) {
+	.vertically-centered.row {
+		@include flex-direction(column);
+		> div {
+			padding: 0px;
+		}
+	}
+}
+
+.img-responsive.img-circle {
+	margin: auto;
+}
+
+.action-btn {
+	color: $primary;
+	border: solid 2px $primary;
+	background-color: transparent;
+	font-size: 2em;
+	padding: 0.5em 1em;
+	margin: 1em 0em;
+}
+
+
+@font-face {
+	font-family: HoneyScript;
+	src: url('/fonts/HoneyScript-Light.ttf');
+}
+
+@font-face {
+	font-family: CooperHewitt;
+	src: url('/fonts/CooperHewitt-Light.otf');
+}

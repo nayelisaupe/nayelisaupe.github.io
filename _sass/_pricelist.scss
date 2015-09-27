@@ -1,0 +1,55 @@
+@import "bourbon/bourbon";
+
+.pricelist {
+	@include display('flex');
+	@include flex-direction(column);
+	
+	
+	.pricelist__title {
+		text-align: center;
+		background: $lightGray;
+		color: $white;
+		font-size: 3.5em;
+		padding: 0.2em;
+		padding-top: 0.3em;
+		@include border-top-radius(20px);
+	}
+
+	.pricelist__price {
+		padding-top: 0.75em;
+		border-left: solid 1px $lightGray;
+		border-right: solid 1px $lightGray;
+		font-size: 4.5em;
+		text-align: center;
+		line-height: 0.5;
+	}
+
+	.pricelist__list {
+		padding: 1em 2em;
+		border: solid 1px $lightGray;
+		border-top: 0;
+		> li {
+			list-style: none;
+			padding: 1em 0.5em;
+			&:not(:last-of-type) {
+				border-bottom: solid 1px $lightGray;
+			}
+		}
+	}
+
+	&.wedding {
+		.pricelist__title {
+			background: $primary;
+			color: $white;
+		}
+		.pricelist__price, .pricelist__list {
+			border-color: $primary;
+		}
+	}
+}
+
+.tab-pane {
+	p {
+		padding: 1em;
+	}
+}
