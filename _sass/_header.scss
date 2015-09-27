@@ -32,6 +32,8 @@
 
 
 .nav.nav-pills {
+	@include display('flex');
+	@include justify-content(center);
 	li {
 		font-size: 2em;
 	}
@@ -61,6 +63,7 @@
 	}
 
 	.nav-pills {
+		@include flex-direction(column);
 		li {
 			width: 100%;
 			text-align: center;

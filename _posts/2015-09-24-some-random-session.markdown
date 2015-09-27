@@ -1,5 +1,5 @@
 ---
-title: the first gallery page
+title: Test Gallery
 layout: gallery
 galleryid: testGallery
 --- 

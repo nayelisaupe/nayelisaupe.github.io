@@ -1,5 +1,5 @@
 ---
-title: the first gallery page
+title: Mason + Kasey
 layout: gallery
 galleryid: testGallery
 --- 

@@ -1,29 +1,85 @@
 - id: testGallery
   description: Some pics from our wedding.
-  imagefolder: /img/posts/wedding
+  imagefolder: /img/posts/kaseymason
+  thumbnailfolder: /img/posts/kaseymacon/thumbnails
   images:
-  # - name: Wedding-0202.jpg
-  #   # thumb: thumb-1.jpg
-  #   text: The first image
-  # - name: it-crowd.jpg
-  #   # thumb: thumb-2.jpg
-  #   text: The second image
-  # - name: moss.jpg
-  #   # thumb: thumb-3.jpg
-  #   text: The third image
-  # - name: tripod.jpg
-  #   # thumb: thumb-3.jpg
-  #   text: The third image
-  - name: Wedding-0202.jpg
-  - name: Wedding-0203.jpg
-  - name: Wedding-0205.jpg
-  - name: Wedding-0209.jpg
-  - name: Wedding-0206.jpg
-  - name: Wedding-0212.jpg
-  - name: Wedding-0214.jpg
-  - name: Wedding-0204.jpg
-  - name: Wedding-0211.jpg
-  - name: Wedding-0207.jpg
-  - name: Wedding-0208.jpg
-  - name: Wedding-0210.jpg
-  - name: Wedding-0213.jpg
+  - name: km-002.jpg
+    thumb: thumb-km-002.jpg
+  - name: km-001.jpg
+    thumb: thumb-km-001.jpg
+  - name: km-003.jpg
+    thumb: thumb-km-003.jpg
+  - name: km-004.jpg
+    thumb: thumb-km-004.jpg
+  - name: km-005.jpg
+    thumb: thumb-km-005.jpg
+  - name: km-006.jpg
+    thumb: thumb-km-006.jpg
+  - name: km-007.jpg
+    thumb: thumb-km-007.jpg
+  - name: km-008.jpg
+    thumb: thumb-km-008.jpg
+  - name: km-009.jpg
+    thumb: thumb-km-009.jpg
+  - name: km-010.jpg
+    thumb: thumb-km-010.jpg
+  - name: km-011.jpg
+    thumb: thumb-km-011.jpg
+  - name: km-012.jpg
+    thumb: thumb-km-012.jpg
+  - name: km-013.jpg
+    thumb: thumb-km-013.jpg
+  - name: km-014.jpg
+    thumb: thumb-km-014.jpg
+  - name: km-015.jpg
+    thumb: thumb-km-015.jpg
+  - name: km-016.jpg
+    thumb: thumb-km-016.jpg
+  - name: km-017.jpg
+    thumb: thumb-km-017.jpg
+  - name: km-018.jpg
+    thumb: thumb-km-018.jpg
+  - name: km-019.jpg
+    thumb: thumb-km-019.jpg
+  - name: km-020.jpg
+    thumb: thumb-km-020.jpg
+  - name: km-031.jpg
+    thumb: thumb-km-31.jpg
+  - name: km-032.jpg
+    thumb: thumb-km-032.jpg
+  - name: km-033.jpg
+    thumb: thumb-km-033.jpg
+  - name: km-034.jpg
+    thumb: thumb-km-034.jpg
+  - name: km-035.jpg
+    thumb: thumb-km-035.jpg
+  - name: km-036.jpg
+    thumb: thumb-km-036.jpg
+  - name: km-037.jpg
+    thumb: thumb-km-037.jpg
+  - name: km-038.jpg
+    thumb: thumb-km-038.jpg
+  - name: km-039.jpg
+    thumb: thumb-km-039.jpg
+  - name: km-040.jpg
+    thumb: thumb-km-040.jpg
+  - name: km-041.jpg
+    thumb: thumb-km-041.jpg
+  - name: km-042.jpg
+    thumb: thumb-km-042.jpg
+  - name: km-043.jpg
+    thumb: thumb-km-043.jpg
+  - name: km-044.jpg
+    thumb: thumb-km-044.jpg
+  - name: km-045.jpg
+    thumb: thumb-km-045.jpg
+  - name: km-046.jpg
+    thumb: thumb-km-046.jpg
+  - name: km-047.jpg
+    thumb: thumb-km-047.jpg
+  - name: km-048.jpg
+    thumb: thumb-km-048.jpg
+  - name: km-049.jpg
+    thumb: thumb-km-049.jpg
+  - name: km-050.jpg
+    thumb: thumb-km-050.jpg

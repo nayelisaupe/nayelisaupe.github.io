@@ -1,6 +1,9 @@
 @import "bourbon/bourbon";
 @import "bootstrap/variables";
 
+.lightbox-body {
+	width: 100vw;
+}
 
 .gallery {
 	@include display('flex');
