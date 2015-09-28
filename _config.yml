@@ -16,3 +16,7 @@ black_logo: /img/logo-black.svg
 
 # Build settings
 markdown: kramdown
+
+# Heroku stuff
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
