@@ -1,5 +1,5 @@
 - id: mainCarousel
-  imagefolder: https://s3-us-west-2.amazonaws.com/nayeli-saupe-photography/img/posts/kaseymason
+  imagefolder: /img/posts/kaseymason
   images:
   - name: km-004.jpg
   - name: km-008.jpg

@@ -10,9 +10,9 @@ url: "http://photosbynayeli.com" # the base hostname & protocol for your site
 twitter_username: nayelisaupe
 instagram_username: nayeli_saupe_photography
 facebook_username: PhotosByNayeli
-profile_pic: https://s3-us-west-2.amazonaws.com/nayeli-saupe-photography/img/naye-001.jpg
-white_logo: https://s3-us-west-2.amazonaws.com/nayeli-saupe-photography/img/logo-white.svg
-black_logo: https://s3-us-west-2.amazonaws.com/nayeli-saupe-photography/img/logo-black.svg
+profile_pic: /img/naye-001.jpg
+white_logo: /img/logo-white.svg
+black_logo: /img/logo-black.svg
 
 # Build settings
 markdown: kramdown
