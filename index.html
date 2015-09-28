@@ -13,7 +13,7 @@ carouselId: mainCarousel
       {% if carousel.id == page.carouselId %}
         {% for image in carousel.images %}
           <div class="item{% if forloop.first %} active{% endif %}" style="background-image: url('{{carousel.imagefolder}}/{{image.name}}')">
-            
+
           </div>
         {% endfor %}
       {% endif %}
@@ -22,7 +22,7 @@ carouselId: mainCarousel
 
   </div>
   <div class="sub-header">
-    
+
   </div>
 </header>
 
@@ -49,7 +49,7 @@ carouselId: mainCarousel
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
         </p>
   </div>
-  <img class="skyline" src="/img/slc-skyline-black.svg">
+  <img class="skyline" src="https://s3-us-west-2.amazonaws.com/nayeli-saupe-photography/img/slc-skyline-black.svg">
 </section>
 
 
@@ -61,11 +61,11 @@ carouselId: mainCarousel
     {% for post in site.posts %}
       {% for gallery in site.data.galleries %}
         {% if gallery.id == post.galleryid %}
-          
+
             {% if gallery.images.first.thumbnail %}
             <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.thumbnail}}')">
             </a>
-  
+
             {% else %}
               <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.name}}')">
             </a>
@@ -73,7 +73,7 @@ carouselId: mainCarousel
 
         {% endif %}
       {% endfor %}
-    {% endfor %}  
+    {% endfor %}
 
   </div>
 </section>
@@ -85,13 +85,13 @@ carouselId: mainCarousel
     <ul class="nav nav-pills" role="tablist">
     <li role="presentation" class="active"><a href="#general-prices" aria-controls="general-prices" role="tab" data-toggle="tab">General Prices</a></li>
     <li role="presentation"><a href="#wedding-prices" aria-controls="wedding-prices" role="tab" data-toggle="tab">Wedding Prices</a></li>
-    
+
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="general-prices">
-      
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
       </p>
@@ -210,7 +210,7 @@ carouselId: mainCarousel
     </div>
   </div>
 
-    
+
   </div>
 
 </section>
@@ -227,7 +227,7 @@ carouselId: mainCarousel
   </div>
 </section>
 
-<!-- 
+<!--
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
