@@ -1,0 +1,5 @@
+---
+title: Dulce - Called to Serve
+layout: gallery
+galleryid: dulceMission
+--- 

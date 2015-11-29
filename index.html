@@ -35,7 +35,7 @@ carouselId: mainCarousel
       </div>
       <div class="col-sm-12 col-md-8 col-lg-9 text-justify">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit. Donec dui nulla, lobortis at purus eu, aliquam mattis risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris in elit ac mi aliquam finibus. Donec quis massa non nulla consequat tempor non in justo. Suspendisse consequat dolor nec feugiat vehicula. Nam faucibus varius libero, vel iaculis est tincidunt sagittis. Nullam cursus bibendum pharetra.
+          I'm a photographer in the Salt Lake City valley, but I'm originally from Monterrey, Mexico! I have always believed that the best photos are taken in the most natural of moments and in the moments that you want to remember forever. I love capturing life's most special moments and hope to be able to help you remember that special moment forever.
         </p>
       </div>
     </div>
@@ -45,9 +45,7 @@ carouselId: mainCarousel
 <section class="slc">
   <div class="container">
     <h2>Salt Lake City, UT</h2>
-    <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
-        </p>
+    <p>I am currently living in the Salt Lake City area and love all of the beautiful places we have to take pictures around the valley. I am available to take pictures all accross the Salt Lake valley, but am willing to travel as well!</p>
   </div>
   <img class="skyline" src="/img/slc-skyline-black.svg">
 </section>
@@ -64,10 +62,12 @@ carouselId: mainCarousel
           
             {% if gallery.images.first.thumbnail %}
             <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.thumbnail}}')">
+                <span>{{gallery.category}}</span>
             </a>
   
             {% else %}
               <a class="gallery__image" href="{{ post.url | prepend: site.baseurl }}" style="background-image: url('{{gallery.imagefolder}}/{{gallery.images.first.name}}')">
+                  <span>{{gallery.category}}</span>
             </a>
             {% endif %}
 
@@ -93,55 +93,46 @@ carouselId: mainCarousel
     <div role="tabpanel" class="tab-pane fade in active" id="general-prices">
       
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+        I love taking pictures of couples, families, infants, and covering events. No matter what your needs, we can find a package that will best fit you. Fill free to contact me for specific pricing and package details.
       </p>
 
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <div class="pricelist">
             <div class="pricelist__title">Regular</div>
-            <div class="pricelist__price">$750</div>
+            <div class="pricelist__price">$200</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>1 Location</li>
+              <li>1 Outfit</li>
+              <li>1 Hour Session</li>
+              <li>75 Edited Photos</li>
+              <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="pricelist">
             <div class="pricelist__title">Premium</div>
-            <div class="pricelist__price">$900</div>
+            <div class="pricelist__price">$350</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+              <li>1 Location</li>
+              <li>2 Outfits</li>
+              <li>2 Hour Session</li>
+              <li>100 Edited Photos</li>
+              <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="pricelist">
             <div class="pricelist__title">Platinum</div>
-            <div class="pricelist__price">$1,200</div>
+            <div class="pricelist__price">$500</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+                <li>2 Locations</li>
+                <li>3 Outfits</li>
+                <li>2 Hour Session</li>
+                <li>150 Edited Photos</li>
+                <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
@@ -152,55 +143,109 @@ carouselId: mainCarousel
 
     <div role="tabpanel" class="tab-pane fade" id="wedding-prices">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+        Weddings and engagement pictures are my favorite! I love working with couples to capture that special moment. From announcement pictures to the big day and even to trash the dress, I will work with you to make sure your wedding is unforgettable and make sure you will be able to remember that big day for the rest of your life.
       </p>
 
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <div class="pricelist wedding">
             <div class="pricelist__title">Regular</div>
-            <div class="pricelist__price">$1,000</div>
+            <div class="pricelist__price">$600</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+                <li>
+                    Engagement Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>2 outfits</li>
+                        <li>1 Hour Session</li>
+                        <li>75 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Formal Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>1 Hour Session</li>
+                        <li>75 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="pricelist wedding">
             <div class="pricelist__title">Premium</div>
-            <div class="pricelist__price">$1,500</div>
+            <div class="pricelist__price">$750</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+                <li>
+                    Engagement Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>2 outfits</li>
+                        <li>1 Hour Session</li>
+                        <li>75 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Formal Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>1 Hour Session</li>
+                        <li>75 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Event Coverage
+                    <ul>
+                        <li>1 Location</li>
+                        <li>2 Hours Event Coverage</li>
+                        <li>Unlimited Photos</li>
+                    </ul>
+                </li>
+                <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="pricelist wedding">
             <div class="pricelist__title">Platinum</div>
-            <div class="pricelist__price">$2,000</div>
+            <div class="pricelist__price">$1,000</div>
             <ul class="pricelist__list">
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Consectetur adipiscing elit</li>
-              <li>Interdum et malesuada fames ac ante ipsum</li>
+                <li>
+                    Engagement Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>2 outfits</li>
+                        <li>2 Hour Session</li>
+                        <li>100 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Formal Session
+                    <ul>
+                        <li>1 Location</li>
+                        <li>2 Hour Session</li>
+                        <li>100 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Event Coverage
+                    <ul>
+                        <li>1 Location</li>
+                        <li>3 Hours Event Coverage</li>
+                        <li>Unlimited Photos</li>
+                    </ul>
+                </li>
+                <li>
+                    Trash the Dress
+                    <ul>
+                        <li>1 Location</li>
+                        <li>1 Hour Session</li>
+                        <li>75 Edited Photos</li>
+                    </ul>
+                </li>
+                <li>Images available online and in USB</li>
             </ul>
           </div>
         </div>
@@ -219,33 +264,10 @@ carouselId: mainCarousel
   <div class="container">
     <h2>Get In Touch</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+        Send me an email so we can discuss your photography needs, I would love to work with you to help you capture that special moment and make memories that will last forever.
       </p>
       <div class="text-center">
         <a href="mailto:{{site.email}}" class="btn btn-primary action-btn"><i class="fa fa-envelope-o"></i> Contact Me</a>
       </div>
   </div>
 </section>
-
-<!-- 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          {{post.galleryid}}
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
- -->

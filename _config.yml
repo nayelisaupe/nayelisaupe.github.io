@@ -1,7 +1,7 @@
 # Site settings
 title: Nayeli Saupe Photography
-email: nayeli@photosbynayeli.com
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie et urna non condimentum. Pellentesque ultricies luctus sodales. Pellentesque tempus euismod egestas. Proin varius pretium nulla, ut ultrices odio vulputate eu. Sed sit amet finibus odio, eu faucibus elit.
+email: nayeli@nayelisaupe.com
+description: Salt Lake City photographer that specializes in weddings, couples, and family sessions.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://nayelisaupe.com" # the base hostname & protocol for your site
 twitter_username: nayelisaupe
@@ -13,3 +13,5 @@ black_logo: /img/logo-black.svg
 
 # Build settings
 markdown: kramdown
+
+permalink: /:title
