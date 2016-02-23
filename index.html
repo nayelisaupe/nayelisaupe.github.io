@@ -56,7 +56,7 @@ carouselId: mainCarousel
     <h2>Portfolio</h2>
   </div>
   <div class="gallery large">
-    {% for post in site.posts %}
+    {% for post in site.posts reversed %}
       {% for gallery in site.data.galleries %}
         {% if gallery.id == post.galleryid %}
           
@@ -238,11 +238,9 @@ carouselId: mainCarousel
                     </ul>
                 </li>
                 <li>
-                    Trash the Dress
+                    Memory Book
                     <ul>
-                        <li>1 Location</li>
-                        <li>1 Hour Session</li>
-                        <li>75 Edited Photos</li>
+                        <li>12"x12" customized hhoto album </li>
                     </ul>
                 </li>
                 <li>Images available online and in USB</li>

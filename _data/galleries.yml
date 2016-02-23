@@ -1,3 +1,31 @@
+
+- id: larissaPregnancy
+  description: What a beautiful family the johnson's are!
+  category: pregnancy
+  imagefolder: https://d253pw6h46x2y8.cloudfront.net/larissa
+  images:
+  - name: larissa-01.jpg
+  - name: larissa-02.jpg
+  - name: larissa-03.jpg
+  - name: larissa-04.jpg
+  - name: larissa-05.jpg
+  - name: larissa-06.jpg
+  - name: larissa-07.jpg
+  - name: larissa-08.jpg
+  - name: larissa-09.jpg
+  - name: larissa-10.jpg
+  - name: larissa-11.jpg
+  - name: larissa-12.jpg
+  - name: larissa-13.jpg
+  - name: larissa-14.jpg
+  - name: larissa-15.jpg
+  - name: larissa-16.jpg
+  - name: larissa-17.jpg
+  - name: larissa-18.jpg
+  - name: larissa-19.jpg
+  - name: larissa-20.jpg
+
+
 - id: jeffreyEngagements
   description: Engagement session for Taylor and her fiance.
   category: engagements
@@ -22,8 +50,6 @@
   - name: j-17.jpg
   - name: j-18.jpg
 
-    
-    
 
 - id: maconEngagements
   description: Engagement session for Mason and Kasey.
@@ -129,3 +155,6 @@
   - name: a-12.jpg
   - name: a-13.jpg
   - name: a-14.jpg
+
+
+
